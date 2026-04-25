@@ -60,15 +60,15 @@ export const IngredientList: React.FC<IngredientListProps> = ({ initialIngredien
       </section>
 
       {/* Ingredients Grid */}
-      <section className="max-w-7xl mx-auto px-6 pb-xxl">
+      <section className="max-w-7xl mx-auto px-4 md:px-6 pb-xxl">
         {filteredIngredients.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-lg">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-8">
             {filteredIngredients.map((ingredient) => (
               <IngredientCard key={ingredient.idIngredient} ingredient={ingredient} />
             ))}
           </div>
         ) : (
-          <div className="text-center py-20 px-6 bg-white rounded-xl shadow-sm border border-neutral-200 max-w-md mx-auto mt-8">
+          <div className="text-center py-20 px-6 bg-white rounded-xl shadow-sm border border-neutral-200 max-w-[448px] mx-auto mt-8 w-full">
             <span className="material-symbols-outlined text-5xl text-neutral-300 mb-4">search_off</span>
             <h3 className="font-h3 text-h3 text-neutral-900 mb-2">No ingredients found</h3>
             <p className="font-body-md text-body-md text-neutral-500">Try adjusting your search term to find what you&apos;re looking for.</p>
