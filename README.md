@@ -39,7 +39,7 @@ The source code follows the Atomic Design pattern for components:
 1. Clone the repository:
 ```bash
 git clone <your-repository-url>
-cd cmlabs-frontend-fulltime-test
+cd cmlabs-frontend-part-time-test
 ```
 
 2. Install dependencies:
